@@ -17,14 +17,14 @@ export async function seed(knex) {
       image: "/images/cat0.jpeg",
       gender: "Male",
       description:
-        "This wise, loving senior gentleman was rescued in a small town just outside Calgary and his owners were not able to be located. So he is starting over. After a full health check, a bit of a shave to remove some matts, he is healthy and would like to meet his match as soon as possible. He is not a fan of other cats and would prefer to be the only King in your life.",
+        "This wise, loving senior gentleman was rescued in a small town just outside Toronto and his owners were not able to be located. So he is starting over. After a full health check, a bit of a shave to remove some matts, he is healthy and would like to meet his match as soon as possible. He is not a fan of other cats and would prefer to be the only King in your life.",
       age: "Senior",
     },
     {
       id: 22,
       shelter_id: 2,
       name: "Pedro",
-      image: "/images/cat1.jpeg",
+      image: "/images/cat42.jpeg",
       gender: "Male",
       description:
         "I am a big and sometimes sassy guy. I prefer a quieter place of residence without other pets or kids. I have a weird love/hate relationship with bags. When you handle one it startles me but I like to try to climb inside of them. Despite being kind of picky and oddly not a big fan of Temptations treats, I have a healthy appetite. I do play with toys with you and alone but not for long. Once I settle in with you I will try to take your spot on the couch or at worst lean on you while sitting next to you.",
@@ -54,7 +54,7 @@ export async function seed(knex) {
       id: 55,
       shelter_id: 5,
       name: "Orange",
-      image: "/images/cat4.jpeg",
+      image: "/images/cat33.jpeg",
       gender: "Male",
       description:
         "Sure, Orange has a few more health issues, aches and pains as a dignified fellow of 13 years, but he also carries the wisdom of his years and a heart full of love. On the health front, Bertie is FIV positive, has mild heart disease, arthritis, and recently had a urinary infection and he is in the very early stages of kidney failure.",
@@ -64,7 +64,7 @@ export async function seed(knex) {
       id: 66,
       shelter_id: 6,
       name: "Marie",
-      image: "/images/cat5.jpeg",
+      image: "/images/cat50.jpeg",
       gender: "Female",
       description:
         "After a rural rescue Marie is shy, but curious about her new living circumstance. Lounging in cosy hidey beds and watching world around her, enjoying her morning and evening canned food and quietly learning to trust volunteers are a few of her favourite things.",
@@ -74,7 +74,7 @@ export async function seed(knex) {
       id: 77,
       shelter_id: 7,
       name: "Felipe",
-      image: "/images/cat6.jpeg",
+      image: "/images/cat32.jpeg",
       gender: "Male",
       description:
         "Due to Felipe's long time on the streets and probably from a past territorial skirmish, he has contracted FIV (Feline Immunodeficiency Virus). Please do not be afraid of adopting Felipe. Cats with FIV can live long uneventful lives wtih normal attentive care.",
@@ -84,7 +84,7 @@ export async function seed(knex) {
       id: 88,
       shelter_id: 8,
       name: "Gael",
-      image: "/images/cat7.jpeg",
+      image: "/images/cat11.jpeg",
       gender: "Male",
       description:
         "I'm Gael, a very affectionate and sly kitten. I need to undergo surgery and today I no longer have a right ear, so I am deaf only on that side. Also, I have a sequel that makes me not poke my eye properly, which doesn't affect anything in my life, I just need humans to put a few drops of eye drops in my eye so it doesn't get dry. Did I mention that I'm affectionate? So that's one of my points, I love the neck caress and I'm protecting the strong that are for a family that gives me endless affection!",
@@ -94,7 +94,7 @@ export async function seed(knex) {
       id: 99,
       shelter_id: 9,
       name: "Moe",
-      image: "/images/cat8.jpeg",
+      image: "/images/cat35.jpeg",
       gender: "Male",
       description:
         "My old house was very dirty, there wasn't even a litter box for me to do my needs, I had to do it on the floor. My food was leftovers and my water was always full of garbage. I've had almost zero contact with humans, so I'm more scared and I'm afraid. I know that if I go to a family that is not in a hurry to adapt and that understands all the suffering I've experienced, little by little I will feel safe and know that I can be really happy!",
@@ -104,7 +104,7 @@ export async function seed(knex) {
       id: 1010,
       shelter_id: 10,
       name: "Pintada",
-      image: "/images/cat9.jpeg",
+      image: "/images/cat47.jpeg",
       gender: "Female",
       description:
         "Hi guys, I'm Pintada! Before arriving at the FurPaws Shelter I lived with a family, as I had access to the street, I ended up being run over and had a spinal fracture that left her paraplegic, this accident did not stop me from giving a lot of love to humans and being patient with the caretakers who do the daily care with me, like changing my diaper. That's why I believe I'll still get a family to give me love and be able to receive my affection in return!",
@@ -124,7 +124,7 @@ export async function seed(knex) {
       id: 212,
       shelter_id: 12,
       name: "Dunny",
-      image: "/images/cat11.jpeg",
+      image: "/images/cat18.jpeg",
       gender: "Male",
       description:
         "Hi guys, this is Dunny, I came to tell you my life story! I had a serious accident that left one of my eyes hanging and my mouth broken. I was rushed to the Institute, where I received first aid, many tests and surgery. I ended up losing that eye, but I can see very well with the other one! In one of the tests I did, it showed that I am FIV positive, which is a disease that makes me a little more delicate, but it doesn't stop me from living well and happy! I can be a brother to dogs, but only to cats if he is also FIV positive. I'm very bashful and I love being around people!",
@@ -134,7 +134,7 @@ export async function seed(knex) {
       id: 5050,
       shelter_id: 9,
       name: "Dudu",
-      image: "/images/cat50.jpeg",
+      image: "/images/cat8.jpeg",
       gender: "Male",
       description:
         "Dudu loves affection and loves to be held. He has participated in some adoption fairs, but no one wanted to adopt him. He is a super cute and wonderful kitten. He lives here at the shelter waiting for a beautiful family.",

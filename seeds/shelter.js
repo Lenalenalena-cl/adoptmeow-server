@@ -20,7 +20,7 @@ export async function seed(knex) {
       id: 2,
       name: "Meow Shelter",
       address: "33 Pearl Street SW",
-      city: "Toronto",
+      city: "North York",
       email: "contact@meowshelter.com",
     },
     {
@@ -34,14 +34,14 @@ export async function seed(knex) {
       id: 4,
       name: "Kitty Kitty Foundation",
       address: "890 Brannnan Street",
-      city: "Toronto",
+      city: "North York",
       email: "contact@kittykitty.com",
     },
     {
       id: 5,
       name: "Fur Ball Shelter",
       address: "520 Broadway",
-      city: "Toronto",
+      city: "Scarborough",
       email: "contact@furball.com",
     },
     {
@@ -55,7 +55,7 @@ export async function seed(knex) {
       id: 7,
       name: "Saving Cats Shelter",
       address: "2650 NW 5th Avenue",
-      city: "Toronto",
+      city: "Etobicoke",
       email: "contact@msavingcats.com",
     },
     {
@@ -70,7 +70,7 @@ export async function seed(knex) {
       id: 9,
       name: "Purr Foundation",
       address: "34 Magazine Avenue",
-      city: "Toronto",
+      city: "Etobicoke",
       email: "contact@purrfoundation.com",
     },
     {
@@ -84,7 +84,7 @@ export async function seed(knex) {
       id: 11,
       name: "Furever Shelter",
       address: "1800 Heritage Dr SW",
-      city: "Toronto",
+      city: "Mississauga",
       email: "contact@furevershelter.com",
     },
   
@@ -107,7 +107,7 @@ export async function seed(knex) {
       id: 14,
       name: "Feline Rescue Society",
       address: "1213 Main Street",
-      city: "Toronto",
+      city: "Mississauga",
       email: "contact@felinerescue.com",
     },
     {
@@ -121,7 +121,7 @@ export async function seed(knex) {
       id: 16,
       name: "Catsrose Shelter",
       address: "4500 53 St",
-      city: "Toronto",
+      city: "Mississauga",
       email: "contact@catsroseshelter.com",
     },
   ]);

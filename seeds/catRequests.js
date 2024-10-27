@@ -10,7 +10,7 @@ export async function seed(knex) {
   // Insert seed entries
   await knex("catRequests").insert([
     {
-      cat_id: 1,
+      cat_id: 1010,
       user_id: 1,
       name: "cl",
       email: "cl@test.com",
