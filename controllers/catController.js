@@ -1,6 +1,8 @@
-const knex = require("knex")(require("../knexfile"));
+import initKnex from "knex";
+import configuration from "../knexfile.js";
+const knex = initKnex(configuration);
 
-exports.index = (_req, res) => {
+export const index = (_req, res) => {
   knex("cat")
     .select("shelter.city", "cat.*")
     .innerJoin("shelter", "shelter.id", "cat.shelter_id")
@@ -10,7 +12,7 @@ exports.index = (_req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving Cats: ${err}`));
 };
 
-exports.show = (req, res) => {
+export const show = (req, res) => {
   knex("cat")
     .select("shelter.name as shelter_name", "cat.*")
     .innerJoin("shelter", "shelter.id", "cat.shelter_id")
@@ -22,7 +24,7 @@ exports.show = (req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving Cat: ${err}`));
 };
 
-exports.like = (req, res) => {
+export const like = (req, res) => {
   console.log("Like");
   knex("catLikes")
     .insert({
@@ -36,7 +38,7 @@ exports.like = (req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving Cat: ${err}`));
 };
 
-exports.removeLike = (req, res) => {
+export const removeLike = (req, res) => {
   knex("catLikes")
     .where({
       user_id: req.body.userID,

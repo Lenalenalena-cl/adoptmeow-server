@@ -1,6 +1,8 @@
-const knex = require("knex")(require("../knexfile"));
+import initKnex from "knex";
+import configuration from "../knexfile.js";
+const knex = initKnex(configuration);
 
-exports.index = (_req, res) => {
+export const index = (_req, res) => {
   knex("catRequests")
     .then((data) => {
       res.status(200).json(data);
@@ -8,7 +10,7 @@ exports.index = (_req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving Requests: ${err}`));
 };
 
-exports.add = (req, res) => {
+export const add = (req, res) => {
   knex("catRequests")
     .insert({
       user_id: req.body.userID,
@@ -22,7 +24,7 @@ exports.add = (req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving Request: ${err}`));
 };
 
-exports.delete = (req, res) => {
+export const thedelete = (req, res) => {
   knex("catRequests")
     .where("id", req.params.id)
     .del()

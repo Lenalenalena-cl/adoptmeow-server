@@ -1,7 +1,8 @@
-const knex = require("knex")(require("../knexfile"));
-const bcrypt = require("bcrypt");
+import initKnex from "knex";
+import configuration from "../knexfile.js";
+const knex = initKnex(configuration);
 
-exports.login = (req, res) => {
+export const login = (req, res) => {
   knex("user")
     .where("username", req.body.username)
     .then((data) => {

@@ -1,6 +1,8 @@
-const knex = require("knex")(require("../knexfile"));
+import initKnex from "knex";
+import configuration from "../knexfile.js";
+const knex = initKnex(configuration);
 
-exports.index = (_req, res) => {
+export const index = (_req, res) => {
   knex("shelter")
     .then((data) => {
       res.status(200).json(data);
@@ -8,7 +10,7 @@ exports.index = (_req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving Shelter: ${err}`));
 };
 
-exports.show = (req, res) => {
+export const show = (req, res) => {
   knex("shelter")
     .where("id", req.params.id)
     .first()
@@ -18,7 +20,7 @@ exports.show = (req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving Shelter: ${err}`));
 };
 
-exports.cats = (req, res) => {
+export const cats = (req, res) => {
   knex("cat")
     .where("shelter_id", req.params.id)
     .then((data) => {

@@ -1,8 +1,10 @@
-const router = require("express").Router();
-const requestController = require("../controllers/requestController");
 
-router.route("/").get(requestController.index);
-router.route("/:id/form").post(requestController.add);
-router.route("/:id/delete").delete(requestController.delete);
+import express from 'express'
+import {index, add, thedelete} from '../controllers/requestController.js'
 
-module.exports = router;
+const router = express.Router()
+router.route("/").get(index);
+router.route("/:id/form").post(add);
+router.route("/:id/delete").delete(thedelete);
+
+export default router;

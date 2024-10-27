@@ -2,15 +2,15 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.up = function (knex) {
+export const up = function (knex) {
   return knex.schema.createTable("cat", function (table) {
     table.increments("id").primary();
     table.string("name").notNullable();
     table.string("gender").notNullable();
     table.string("age").notNullable();
-    table.string("description", [2000]).notNullable();
+    table.string("description", 2000).notNullable();
     table.string("image").notNullable();
-    table.integer("shelter_id").unsigned().notNullable();
+    table.integer("shelter_id").unsigned();
     table
       .foreign("shelter_id")
       .references("id")
@@ -24,6 +24,6 @@ exports.up = function (knex) {
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.down = function (knex) {
+export const down = function (knex) {
   return knex.schema.dropTable("cat");
 };

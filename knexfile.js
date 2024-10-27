@@ -1,26 +1,15 @@
-// Update with your config settings.
+import "dotenv/config";
+
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
-const connections = {
-  development: {
-    client: "mysql",
-    connection: {
-      host: "127.0.0.1",
-      user: "root",
-      password: "root",
-      database: "meowadopt",
-      charset: "utf8",
-    },
-  },
-  production: {
-    client: "mysql",
-    connection: process.env.CLEARDB_DATABASE_URL,
-  },
+export default {
+  client: 'mysql2',
+  connection: {
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+  }
 };
-
-module.exports =
-  process.env.NODE_ENV === "production"
-    ? connections.production
-    : connections.development;

@@ -1,14 +1,16 @@
-require("dotenv").config();
-const express = require("express");
-const path = require("path");
-const bodyParser = require("body-parser");
+import express from "express"
+import cors from "cors";
+import "dotenv/config"
+import bodyParser from "body-parser";
+import path from "path";
 const app = express();
-const cors = require("cors");
-const catsRoutes = require("./routes/cats");
-const sheltersRoutes = require("./routes/shelters");
-const usersRoutes = require("./routes/users");
-const requestsRoutes = require("./routes/requests");
-const authRoutes = require("./routes/login");
+
+import catsRoutes from "./routes/cats.js"
+import sheltersRoutes from "./routes/shelters.js"
+import usersRoutes from "./routes/users.js"
+import requestsRoutes from "./routes/requests.js"
+import authRoutes from "./routes/login.js"
+
 
 const PORT = process.env.PORT || 3001;
 

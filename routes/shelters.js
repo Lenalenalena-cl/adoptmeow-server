@@ -1,8 +1,14 @@
-const router = require("express").Router();
-const shelterController = require("../controllers/shelterController");
 
-router.route("/").get(shelterController.index);
-router.route("/:id").get(shelterController.show);
-router.route("/:id/cats").get(shelterController.cats);
+import express from 'express'
 
-module.exports = router;
+import {index, show, cats} from '../controllers/shelterController.js'
+
+const router = express.Router()
+    router.route("/").get(index);
+    router.route("/:id").get(show);
+    router.route("/:id/cats").get(cats);
+
+
+
+
+export default router;

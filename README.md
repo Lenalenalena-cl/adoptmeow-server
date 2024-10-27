@@ -1,6 +1,6 @@
 # <p  align="center" style="font-size: 28px ;"> <img align="center" src="https://cdn-icons-png.flaticon.com/512/1864/1864514.png" style="height: 40px; with: 30px">meowdopt API </p>
 
-- It is a cat API seeded with a list of cats and shelters from Alberta, Canada.
+- It is a cat API seeded with a list of cats and shelters from Toronto, Canada.
 
 ## Table of contents
 
@@ -8,7 +8,6 @@
 - [Technologies](#technologies)
 - [Routes](#routes)
 - [Installing](#installing)
-- [Author](#author)
 
 ## Overview
 
@@ -362,7 +361,3 @@
 - Download this Repository or clone it: `git clone git@github.com:aramatsolrac/meowdopt-API.git`
 - `cd` into the new folder and type `npm install`
 - To run the project type: `npm start`
-
-### Author
-- Linkedin - [Tamara Carlos](https://www.linkedin.com/in/tamaracarlos/)
-- Twitter - [@aramatsolrac](https://twitter.com/aramatsolrac)

@@ -1,7 +1,10 @@
-const knex = require("knex")(require("../knexfile"));
-const bcrypt = require("bcrypt");
+import initKnex from "knex";
+import configuration from "../knexfile.js";
+import bcrypt from "bcrypt"
+const knex = initKnex(configuration);
 
-exports.index = (_req, res) => {
+
+export const index = (_req, res) => {
   knex("user")
     .then((data) => {
       res.status(200).json(data);
@@ -9,7 +12,7 @@ exports.index = (_req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving User: ${err}`));
 };
 
-exports.show = (req, res) => {
+export const show = (req, res) => {
   knex("user")
     .where("id", req.params.id)
     .then((data) => {
@@ -18,7 +21,7 @@ exports.show = (req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving User: ${err}`));
 };
 
-exports.favorites = (req, res) => {
+export const favorites = (req, res) => {
   knex("catLikes")
     .select(
       "cat.name as cat_name",
@@ -35,7 +38,7 @@ exports.favorites = (req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving User: ${err}`));
 };
 
-exports.requests = (req, res) => {
+export const requests = (req, res) => {
   knex("catRequests")
     .select("cat.name as cat_name", "cat.image", "catRequests.*")
     .innerJoin("cat", "cat.id", "catRequests.cat_id")
@@ -46,7 +49,7 @@ exports.requests = (req, res) => {
     .catch((err) => res.status(400).send(`Error retrieving User: ${err}`));
 };
 
-exports.signup = (req, res) => {
+export const signup = (req, res) => {
   bcrypt.hash(req.body.password, 10).then((hashedPassword) => {
     return knex("user")
       .insert({
