@@ -13,17 +13,12 @@ export async function seed(knex) {
     {
       isLiked: true,
       user_id: 1,
-      cat_id: 5050,
+      cat_id: 1010,
     },
     {
       isLiked: true,
       user_id: 1,
-      cat_id: 77,
-    },
-    {
-      isLiked: true,
-      user_id: 1,
-      cat_id: 11,
+      cat_id: 1111,
     },
   ]);
 }

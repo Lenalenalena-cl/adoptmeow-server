@@ -13,7 +13,7 @@ export const up = function (knex) {
       .foreign("cat_id")
       .references("id")
       .inTable("cat")
-    table.integer("user_id");
+    table.integer("user_id").unsigned();
     table
       .foreign("user_id")
       .references("id")
