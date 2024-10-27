@@ -72,7 +72,7 @@ export async function seed(knex) {
     },
     {
       id: 77,
-      shelter_id: 7,
+      shelter_id: 1,
       name: "Felipe",
       image: "/images/cat32.jpeg",
       gender: "Male",
@@ -132,7 +132,7 @@ export async function seed(knex) {
     },
     {
       id: 5050,
-      shelter_id: 9,
+      shelter_id: 6,
       name: "Dudu",
       image: "/images/cat8.jpeg",
       gender: "Male",
